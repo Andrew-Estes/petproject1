@@ -5,6 +5,16 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
+/* Copyright (C) 2017 Andrew C. Estes - All Rights Reserved
+ * You may use, distribute and modify this code under the
+ * terms of the General Public License.  I, Andrew C. Estes 
+ * will retrain all rights where written permission or royalties
+ * have not been sought.
+ *
+ * You should have received a copy of the General Public License with
+ * this project. 
+ */
+
 namespace ClassLibrary1
 {
     /// <summary>
@@ -144,7 +154,7 @@ namespace ClassLibrary1
         }
 
 
-
+        //TODO: Customer Index Functionality
         /// <summary>
         /// Customer Index List
         /// </summary>

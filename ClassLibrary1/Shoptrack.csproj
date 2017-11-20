@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataDefination3.cs" />
     <Compile Include="DataDefination1.cs" />
     <Compile Include="Business1.cs" />
     <Compile Include="DataDefination2.cs" />

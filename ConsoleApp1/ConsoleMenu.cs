@@ -5,27 +5,30 @@ using System.Text;
 using System.Threading.Tasks;
 using ClassLibrary1;
 
+/* Copyright (C) 2017 Andrew C. Estes - All Rights Reserved
+ * You may use, distribute and modify this code under the
+ * terms of the General Public License.  I, Andrew C. Estes 
+ * will retrain all rights where written permission or royalties
+ * have not been sought.
+ *
+ * You should have received a copy of the General Public License with
+ * this project. 
+ */
+
 namespace ConsoleApp1
 {
+    /// <summary>
+    /// Console App Main Menu Functionality
+    /// </summary>
     public class ConsoleMainMenu
     {
         People Customer = new People();
         List<People> CustomerIndex = new List<People>();
 
-        //Customer.FirstName = "Andy";
-        //Customer.LastName = "Estes";
-        //Customer.address.city = "Liberty";
-        //Customer.address.state = "MO";
-        //Customer.address.zip = "64068";
-
-        //Console.WriteLine("{0} {1} from {2},{3} {4}",
-        //    Customer.FirstName,
-        //Customer.LastName,
-        //Customer.address.city,
-        //Customer.address.state,
-        //Customer.address.zip
-        //    );
-        //return;
+      
+        /// <summary>
+        /// Console startup menu
+        /// </summary>
         public void MainMenu()
         {
 
@@ -38,6 +41,14 @@ namespace ConsoleApp1
                 Console.WriteLine("3. List Customers");
                 Console.WriteLine("4. Choose Customer");
                 Console.WriteLine("0. Exit");
+                Console.WriteLine("");
+                Console.WriteLine("--Current Customer Selected--");
+                Console.WriteLine("{0} {1} from {2},{3} {4}",
+                Customer.FirstName,
+                Customer.LastName,
+                Customer.address.city,
+                Customer.address.state,
+                Customer.address.zip);
                 choice = Console.ReadLine();
                 switch (choice)
                 {
@@ -45,15 +56,20 @@ namespace ConsoleApp1
                         BuildNewCustomer();
                         break;
                     case "2": // Edit Customers
-
+                        //TODO: Edit Current Customer
                         break;
                     case "3":
+                        //TODO: List Customers
                         break;
                     case "4":
+                        //TODO: Choose Customer
                         break;
                 }
             } while (choice != "0");
         }
+        /// <summary>
+        /// Console driven dialog/input to build Customer object
+        /// </summary>
         public void BuildNewCustomer()
         {
 
@@ -89,8 +105,6 @@ namespace ConsoleApp1
             // 
             // Address
             //
-            //Customer.address.address1;
-            //Customer.address.address2;
             do
             {
                 Console.WriteLine("Address line 1");
@@ -144,7 +158,6 @@ namespace ConsoleApp1
             // 
             // eMail
             //
-            //Customer.email.email_address;
             do
             {
                 Console.WriteLine("eMailAddress");
