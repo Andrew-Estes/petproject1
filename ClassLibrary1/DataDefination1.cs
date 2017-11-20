@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ClassLibrary1
 {
     /// <summary>
-    /// 
+    /// State Postal Code eNum
     /// </summary>
     public enum StatePostalCode { AL, AK, AZ, AR, CA, CO, CT, DE, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME,
         MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT,
@@ -134,15 +134,19 @@ namespace ClassLibrary1
         public Address address = new Address();
         public Phone phone = new Phone();
         public EMail email = new EMail();
-           
+
         public People()
         {
             peopleID = 0;
             FirstName = string.Empty;
             MiddleName = string.Empty;
             LastName = string.Empty;
-         }
+        }
 
 
+
+        /// <summary>
+        /// Customer Index List
+        /// </summary>
     }
 }

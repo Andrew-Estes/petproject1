@@ -38,7 +38,7 @@ namespace ClassLibrary1
         public string tiresize { get; set; }
         public string comments { get; set; }
         List<MileageItem> mileageItem = new List<MileageItem>();
-
+    }
         /// <summary>
         /// Base Class object of Inventory 
         /// </summary>

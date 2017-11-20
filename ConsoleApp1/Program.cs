@@ -11,23 +11,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            People Customer = new People();
 
-            Customer.FirstName = "Andy";
-            Customer.LastName = "Estes";
-            Customer.address.city = "Liberty";
-            Customer.address.state = "MO";
-            Customer.address.zip = "64068";
+            // The Length property is used to obtain the length of the array. 
+            // Notice that Length is a read-only property:
+            //Console.WriteLine("Number of command line parameters = {0}",
+            //   args.Length);
+            //for (int i = 0; i < args.Length; i++)
+            //{
+            //    Console.WriteLine("Arg[{0}] = [{1}]", i, args[i]);
+            //}
 
-            Console.WriteLine("{0} {1} from {2},{3} {4}",
-                Customer.FirstName,
-            Customer.LastName,
-            Customer.address.city,
-            Customer.address.state,
-            Customer.address.zip
-                );
-            return;
-            
+            ConsoleMainMenu cf = new ConsoleMainMenu();
+            cf.MainMenu();
 
         }
     }
